@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
-- Live Site URL: [Vercel]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc/hub/single-price-grid-component-css-flexbox-grid-and-variables-D-s-Qe24Ve)
+- Live Site URL: [Vercel](https://single-price-grid-component-xi-six.vercel.app)
 
 ## My process
 
