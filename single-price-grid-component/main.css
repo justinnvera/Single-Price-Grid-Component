@@ -1,0 +1,172 @@
+/* ! Global ! */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    /* Colors */
+        /* Primary */
+    --cyan: hsl(179, 62%, 43%);
+    --tinted-cyan: hsla(179, 62%, 43%, 0.8);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --white: hsl(0, 0%, 100%);
+        /* Neutral */
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--light-gray);
+    font-family: 'Karla', sans-serif;
+}
+/* ? Container ? */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "subscription why";
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+/* ? Sections ? */
+.section {
+    padding: 2rem;
+}
+/* ? Header ? */
+.header {
+    grid-area: header;
+    background-color: var(--white);
+}
+.header h1 {
+    color: var(--cyan);
+    font-size: 28px;
+    font-weight: 700;
+}
+.header h2 {
+    color: var(--bright-yellow);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.header p {
+    color: var(--grayish-blue);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0.8rem;
+    line-height: 1.5rem;
+}   
+/* ? Subscription ? */
+.subscription {
+    grid-area: subscription;
+    background-color: var(--cyan);
+}
+.subscription h2 {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+}
+.subscription > .price-section {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.subscription > .price-section > .subscription-price {
+    color: var(--white);
+    font-size: 38px;
+    font-weight: 700;
+}
+.subscription > .price-section > .subscription-plan {
+    color: var(--light-gray);
+    opacity: 0.6;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+.subscription p {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+.subscription button {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--bright-yellow);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 2rem;
+    /* The following box-shadow code is from https://html-css-js.com/css/generator/box-shadow/ */
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.04); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.06);
+}
+/* ? Why ? */
+.why {
+    grid-area: why;
+    background-color: var(--tinted-cyan);
+}
+.why h2 {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+}
+.why ul {
+    color: var(--white);
+    opacity: 0.5;
+    font-weight: 400;
+    list-style: none;
+    margin-top: 1rem;
+}
+.why ul li {
+    margin-top: 5px;
+}
+/* ! Media Queries ! */
+@media screen and (max-width: 725px) {
+    /* ? Container ? */
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "subscription"
+        "why";
+        width: 400px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 460px) {
+    /* ? Container ? */
+    .container {
+        width: 370px;
+    }
+}
+@media screen and (max-width: 380px) {
+    /* ? Container ? */
+    .container {
+        width: 320px;
+    }
+}
+@media screen and (max-width: 350px) {
+    /* ? Container ? */
+    .container {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 325px) {
+    /* ? Container ? */
+    .container {
+        width: 280px;
+    }
+}
